@@ -1,0 +1,96 @@
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #EBF5FF;
+  }
+  
+  .dis {
+    background-color: #CBE5FE;
+  }
+  
+  #display {
+    width: 285px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 18px;
+    font-family: "Epilogue", sans-serif;
+   border-color: white;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .btn {
+    width: 50px;
+    height: 40px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #ddd;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .enter {
+    width: 110px;
+  }
+  
+  .btn:hover {
+    background-color: #ccc;
+  }
+  
+  body {
+    background-color: #4D8BC8;
+  }
+  
+  .symbol {
+    background-color: #A3D0FA;
+    color: #679ED6;
+    font-weight: 1000;
+  }
+  
+  .number {
+    background-color: #CBE5FE;
+    color: #07284B;
+    font-size: 18px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media only screen and (max-width: 600px) {
+    .calculator {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    #display {
+      width: 100%;
+      
+    }
+  
+    .btn {
+      width: 20%;
+      margin-left: 2%;
+      margin-right: 2%;
+      font-size: 16px;
+    }
+  
+    .enter {
+      width: 40%;
+    }
+  }

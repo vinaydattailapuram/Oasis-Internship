@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  background-image: url(image1.jpg);
+}
+
+#todo-app {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#add-task-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.task-name {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.task-name.completed {
+  text-decoration: line-through;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.task:hover .delete-icon {
+  opacity: 1;
+}
+
+#confirmation-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.confirmation-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.confirmation-content h3 {
+  margin-top: 0;
+}
+
+.confirmation-buttons {
+  margin-top: 20px;
+}
+
+.confirmation-buttons button {
+  margin-right: 10px;
+}
